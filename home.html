@@ -1,0 +1,55 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<meta name="viewport" content="width=device-width" initial-scale="1.0">
+		</style>
+	</head>
+	<body class='container'>
+	<center>
+		<div class='mazeHolder'>
+			<div class="row">
+			<ul>
+				<li>
+					<canvas id="canvas"  style="border: #000 solid 2px;" ></canvas>
+				</li>
+				<li>
+					<div class=" btn-group-vertical btn-group-lg" >
+						
+						<button onclick="goUp()" class="btn btn-warning">UP</button>
+						<div class="btn-group-horizontal btn-group-lg">
+							<button onclick='goLeft()' class="btn btn-info">LEFT</button>
+							<button onclick='goRight()' class="btn btn-primary">RIGHT</button>
+						</div>
+						<button onclick="goDown()" class="btn btn-default">DOWN</button>
+						<button onclick='randMaze()' class="btn btn-primary">Randomize maze</button>
+						<button onclick="solveMaze() " class="btn btn-danger">Solve</button>
+					</div>
+
+				</li>
+			</ul>
+			</div>
+			<div>
+				<label class="form-control " id="start">Start Position</label>
+				<label class="form-control " id="target">Target Position</label>
+				<label class="form-control " id="time">Search Time</label>
+			</div>
+		</div>
+	</center>
+		<div class='dataHolder' style="margin-left:5px">
+			<form >
+			  <div class="form-group">
+			    <label for="user">Maze Size:</label>
+			    <input type="text" class="form-control mazeDim"  ><br>
+			   	<input type="button" class='form-control  btn-info play ' value="Play"/>
+			  </div>
+			</form>
+		</div>
+		<script type="text/javascript" src="js/jq.js"></script>
+		<script type="text/javascript" src="js/grid.js"></script>
+		<script type="text/javascript" src="js/script.js"></script>
+		<script type="text/javascript" src="js/bootstrap.js">
+		</script>
+		</script>
+	</body>
+</html>

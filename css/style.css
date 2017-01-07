@@ -1,0 +1,16 @@
+.mazeHolder{
+	display: none;
+}
+
+ul{
+list-style-type: none;
+    display: flex;
+}
+
+li{
+	margin-right: 5px;
+}
+
+.mazeHolder{
+	margin: 5px;
+}
